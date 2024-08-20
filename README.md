@@ -1,8 +1,8 @@
-# crowsnest-integration-stub
+# crowsnest-integration-stub-json
 
 From a JBang Quarkus Project.
 
-Example integration for CrowsNest to a simple stub to demonstrate integrations
+Example integration for CrowsNest to a simple stub to demonstrate integrations. This version parses JSON instead of a simple int.
 
 
 ## jbang
@@ -16,8 +16,14 @@ curl -Ls https://sh.jbang.dev | bash -s - app setup
 ## Test stub
 Check the stub is working and returning 1
 ```
-$ curl -s https://www.chrisj.co.uk/stub/
-1
+$ curl -s https://www.chrisj.co.uk/stub-json/
+[
+  {
+    "id": "1",
+    "numberResponse": "1",
+    "textResponse": "Yes"
+  }
+]
 ```
 ## Edit crowsnestIntegrationStub.java
 For the postgres connection, either hardcode in the password (bad practice!) or set a local environmental variable:

@@ -114,9 +114,8 @@ String query = String.format("SELECT * from integrations WHERE hash = %s", integ
 
         success = 0;
         failure = 0;
-
         String jsonString = responseData.toString();
-
+        System.out.printf("Parsing JSON output %s:\n",jsonString);
         JSONParser jsonParser = new JSONParser();
         JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
         String value = (String) jsonObject.get("numberResponse");

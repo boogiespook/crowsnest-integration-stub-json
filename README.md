@@ -57,25 +57,26 @@ The "Secure Images" capability be Red and the domain aperture should also be red
 ## Output
 ```
 $ ./jbang src/crowsnestIntegrationStub.java --hash 563MK
-[jbang] Building jar for crowsnestIntegrationStub.java...
+[jbang] Building jar for crowsnestIntegrationStubJson.java...
 [jbang] Post build with io.quarkus.launcher.JBangIntegration
-Aug 09, 2024 9:44:31 AM org.jboss.threads.Version <clinit>
+Aug 20, 2024 1:31:53 PM org.jboss.threads.Version <clinit>
 INFO: JBoss Threads version 3.4.3.Final
-Aug 09, 2024 9:44:32 AM io.quarkus.deployment.QuarkusAugmentor run
-INFO: Quarkus augmentation completed in 590ms
+Aug 20, 2024 1:31:54 PM io.quarkus.deployment.QuarkusAugmentor run
+INFO: Quarkus augmentation completed in 640ms
 __  ____  __  _____   ___  __ ____  ______ 
  --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
  -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
 --\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
-2024-08-09 09:44:32,671 INFO  [io.quarkus] (main) quarkus 999-SNAPSHOT on JVM (powered by Quarkus 2.16.2.Final) started in 0.207s. 
-2024-08-09 09:44:32,694 INFO  [io.quarkus] (main) Profile prod activated. 
-2024-08-09 09:44:32,694 INFO  [io.quarkus] (main) Installed features: [cdi, jdbc-postgresql, picocli]
+2024-08-20 13:31:54,768 INFO  [io.quarkus] (main) quarkus 999-SNAPSHOT on JVM (powered by Quarkus 2.16.2.Final) started in 0.210s. 
+2024-08-20 13:31:54,790 INFO  [io.quarkus] (main) Profile prod activated. 
+2024-08-20 13:31:54,790 INFO  [io.quarkus] (main) Installed features: [cdi, jdbc-postgresql, picocli]
 Running compliance check for CrowsNest integration using hash 563MK 
-Remote URL: https://www.chrisj.co.uk/stub/
-Result: 1
-Success criteria: 1
+Remote URL: https://www.chrisj.co.uk/stub-json/
+Parsing JSON output {"id":"1","numberResponse":"1","textResponse":"Yes"}:
+Returned Value: 1
+Success Criteria: 1
 Flag updated to: Green
-2024-08-09 09:44:34,218 INFO  [io.quarkus] (main) quarkus stopped in 0.007s
+2024-08-20 13:31:55,968 INFO  [io.quarkus] (main) quarkus stopped in 0.010s
 ```
 You can see that the result matches the success criterea so the flag has been updated to Green.
 

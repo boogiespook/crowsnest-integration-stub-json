@@ -7,7 +7,7 @@ Example integration for CrowsNest to a simple stub to demonstrate integrations. 
 
 ## jbang
 
-You need to install jbang first.
+To run the integration, you will need to install jbang first.
 
 ```shell script
 curl -Ls https://sh.jbang.dev | bash -s - app setup

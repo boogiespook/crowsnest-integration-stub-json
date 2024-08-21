@@ -2,7 +2,7 @@
 
 From a JBang Quarkus Project.
 
-Example integration for CrowsNest to a simple stub to demonstrate integrations. This version parses JSON instead of a simple int.
+Example integration for CrowsNest to a simple stub to demonstrate integrations. This version parses JSON instead of a simple integer.
 
 
 ## jbang
